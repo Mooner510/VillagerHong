@@ -6,7 +6,6 @@ import com.intellij.openapi.startup.StartupActivity;
 import com.intellij.openapi.util.Disposer;
 import org.jetbrains.annotations.NotNull;
 import org.mooner.villagerhong2.listener.TypingListener;
-import org.mooner.villagerhong2.sound.SoundPlayer;
 
 public final class StartActivity implements StartupActivity {
     private Project project;

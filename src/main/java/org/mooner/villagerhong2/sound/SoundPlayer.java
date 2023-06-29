@@ -1,9 +1,5 @@
 package org.mooner.villagerhong2.sound;
 
-import com.intellij.ide.IdeEventQueue;
-import com.intellij.openapi.util.Disposer;
-import org.mooner.villagerhong2.listener.TypingListener;
-
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineEvent;
