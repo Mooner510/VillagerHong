@@ -1,0 +1,43 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>org.mooner.villagerhong</id>
+    <name>Villager Hong</name>
+    <version>0.1.0-beta</version>
+
+    <vendor email="mooner510@naver.com">Mooner510</vendor>
+
+    <description><![CDATA[
+    You will hear interesting sounds when you type.<br\>
+    Just listen to it once! You really just have to listen!<br\><br\>
+    And, just follow me naturally. It's "Hong!"
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+<!--        <fileType name="Global File" language="" id="global_file" patterns="*.*"/>-->
+
+<!--        <typedHandler implementation="org.mooner.villagerhong2.delegate.TypingDelegate"/>-->
+<!--        <enterHandlerDelegate implementation="org.mooner.villagerhong2.delegate.EnterDelegate"/>-->
+<!--        <backspaceHandlerDelegate implementation="org.mooner.villagerhong2.delegate.DeleteDelegate"/>-->
+<!--        <quoteHandler className="org.mooner.villagerhong2.delegate.QuoteTypingDelegate" fileType="."/>-->
+
+<!--        <quoteHandler className="org.mooner.villagerhong2.delegate.MultiQuoteTypingDelegate" fileType="global_file"/>-->
+
+        <postStartupActivity implementation="org.mooner.villagerhong2.StartActivity"/>
+    </extensions>
+
+<!--    <applicationListeners>-->
+<!--        <listener class="org.mooner.villagerhong2.delegate.QuoteTypingDelegate"-->
+<!--                  topic="com.intellij.codeInsight.editorActions.QuoteHandler"/>-->
+<!--        <listener class="org.mooner.villagerhong2.delegate.MultiQuoteTypingDelegate"-->
+<!--                  topic="com.intellij.codeInsight.editorActions.MultiCharQuoteHandler"/>-->
+<!--    </applicationListeners>-->
+<!--    <projectListeners>-->
+<!--        <listener class="org.mooner.villagerhong2.delegate.QuoteTypingDelegate"-->
+<!--                  topic="com.intellij.codeInsight.editorActions.QuoteHandler"/>-->
+<!--        <listener class="org.mooner.villagerhong2.delegate.MultiQuoteTypingDelegate"-->
+<!--                  topic="com.intellij.codeInsight.editorActions.MultiCharQuoteHandler"/>-->
+<!--    </projectListeners>-->
+
+</idea-plugin>
