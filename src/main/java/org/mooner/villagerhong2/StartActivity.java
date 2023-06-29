@@ -13,7 +13,7 @@ public final class StartActivity implements StartupActivity {
     @Override
     public void runActivity(@NotNull Project project) {
         this.project = project;
-        System.out.println("Plugin Loaded: Villager Hong! ON");
+        System.out.println("Villager Hong! ON");
         IdeEventQueue.getInstance().addDispatcher(new TypingListener(), Disposer.newDisposable());
     }
 }
